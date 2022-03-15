@@ -1,9 +1,9 @@
 var sortedCities = cityGrowths.sort((a,b) => a.Increase_from_2016 - b.Increase_from_2016).reverse();
 
-var topFiveCities = sortedCities.slice(0,5);
+var topFiveCities = sortedCities.slice(0,7);
 
-var topFiveCitiesNames = cityGrowths.map(city => city.City);
-var topFiveCitiesGrowths = cityGrowths.map(city => parseInt(city.Increase_from_2016));
+var topFiveCitiesNames = topFiveCities.map(city => city.City);
+var topFiveCitiesGrowths = topFiveCities.map(city => parseInt(city.Increase_from_2016));
 
 
 var trace = {
